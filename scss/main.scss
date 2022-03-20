@@ -1,0 +1,30 @@
+.section1{
+  padding: 5%;
+  .photo-container{
+    margin: 5px;
+    width: 80%;
+    height: 20%;
+    display: flex;
+    .image-div{
+      width: 40%;
+    }
+    .profile-pic{
+      border-radius: 170px;
+      height: 100%;
+      width: 100%;
+    }
+    .photo-article{
+      text-align: left;
+      font-size: 30px;
+      vertical-align: middle;
+      padding: 9% 6% 6% 16%;
+    }
+  }
+
+  .skills-container{
+    border: 1px solid red;
+    margin: 5px;
+    width: 40%;
+    height: 20%;
+  }
+}
