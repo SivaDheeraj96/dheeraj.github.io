@@ -1,15 +1,28 @@
+body{
+  background-color: rgb(13,25,46);
+  color: rgb(206,215,243);
+  .straight-line{
+    display: inline-block;
+    border: 0.5px solid ;
+    color: rgb(255,255,255);
+    width: 300px;
+    // text-align: center;
+  }
 .section1{
-  padding: 5%;
+  padding: 15% 5% 5% 35%;
+  width: 100%;
+  height: 70vh;
   .photo-container{
     margin: 5px;
     width: 80%;
     height: 20%;
     display: flex;
     .image-div{
+      display: none;
       width: 40%;
     }
     .profile-pic{
-      border-radius: 170px;
+      border-radius: 250px;
       height: 100%;
       width: 100%;
     }
@@ -18,6 +31,14 @@
       font-size: 30px;
       vertical-align: middle;
       padding: 9% 6% 6% 16%;
+      p{
+        // line-height: 4px;
+        font-size: 20px;
+        // margin: 0px 0px 5px 0px;
+      }
+      h2{
+        margin: 1px 0px 5px 1px;
+      }
     }
   }
 
@@ -27,4 +48,49 @@
     width: 40%;
     height: 20%;
   }
+}
+
+.about-me{
+  padding: 0% 40% 10% 18%;
+  width: 50%;
+  height: 50vh;
+  font-size: 30px;
+  p{
+    word-wrap: normal;
+    font-size: 24px;
+  }
+  h3{
+    display: inline-block;
+  }
+}
+
+.skills-section{
+  width: 71%;
+  height: 70vh;
+  font-size: 30px;
+  padding: 0% 0% 0% 30%;
+  span{
+    // display: inline-block;
+    float: right;
+    margin-right: 200px;
+  }
+  .straight-line{
+    float: right;
+    margin: 24px 0px 0px 0px;
+  }
+  .skill-container{
+    padding: 45px 0px 0px 0px;
+  }
+  .skill-list-container{
+    display: inline-block;
+    font-size: 18px;
+    vertical-align: top;
+    ul li:first-of-type{
+      list-style-type: none;
+      font-size: 24px;
+      align-self: left;
+      
+    }
+  }
+}
 }

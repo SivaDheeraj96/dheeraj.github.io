@@ -1,31 +1,90 @@
-.section1 {
-  padding: 5%;
+body {
+  background-color: #0d192e;
+  color: #ced7f3;
 }
-.section1 .photo-container {
+body .straight-line {
+  display: inline-block;
+  border: 0.5px solid;
+  color: white;
+  width: 300px;
+}
+body .section1 {
+  padding: 15% 5% 5% 35%;
+  width: 100%;
+  height: 70vh;
+}
+body .section1 .photo-container {
   margin: 5px;
   width: 80%;
   height: 20%;
   display: flex;
 }
-.section1 .photo-container .image-div {
+body .section1 .photo-container .image-div {
+  display: none;
   width: 40%;
 }
-.section1 .photo-container .profile-pic {
+body .section1 .photo-container .profile-pic {
   border-radius: 250px;
   height: 100%;
   width: 100%;
 }
-.section1 .photo-container .photo-article {
+body .section1 .photo-container .photo-article {
   text-align: left;
   font-size: 30px;
   vertical-align: middle;
   padding: 9% 6% 6% 16%;
 }
-.section1 .skills-container {
+body .section1 .photo-container .photo-article p {
+  font-size: 20px;
+}
+body .section1 .photo-container .photo-article h2 {
+  margin: 1px 0px 5px 1px;
+}
+body .section1 .skills-container {
   border: 1px solid red;
   margin: 5px;
   width: 40%;
   height: 20%;
+}
+body .about-me {
+  padding: 0% 40% 10% 18%;
+  width: 50%;
+  height: 50vh;
+  font-size: 30px;
+}
+body .about-me p {
+  word-wrap: normal;
+  font-size: 24px;
+}
+body .about-me h3 {
+  display: inline-block;
+}
+body .skills-section {
+  width: 71%;
+  height: 70vh;
+  font-size: 30px;
+  padding: 0% 0% 0% 30%;
+}
+body .skills-section span {
+  float: right;
+  margin-right: 200px;
+}
+body .skills-section .straight-line {
+  float: right;
+  margin: 24px 0px 0px 0px;
+}
+body .skills-section .skill-container {
+  padding: 45px 0px 0px 0px;
+}
+body .skills-section .skill-list-container {
+  display: inline-block;
+  font-size: 18px;
+  vertical-align: top;
+}
+body .skills-section .skill-list-container ul li:first-of-type {
+  list-style-type: none;
+  font-size: 24px;
+  align-self: left;
 }
 
 /*# sourceMappingURL=main.css.map */
