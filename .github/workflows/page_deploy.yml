@@ -13,13 +13,14 @@ jobs:
     strategy:
       matrix:
         node: [ 18 ]
-    name: Node ${{ matrix.node }} sample
+    name: Deploying page
     steps:
       - uses: actions/checkout@v3
       - name: Setup node
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
       - run: |
           cd portfolio
           npm ci
