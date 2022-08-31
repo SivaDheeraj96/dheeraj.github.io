@@ -23,5 +23,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm CI
-    - run: npm run deploy
+    - uses: actions/github-script@v6
+      with:
+        script: |
+          cd portfolio
+          npm CI
+          npm run deploy
