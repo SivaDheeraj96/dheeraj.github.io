@@ -4,8 +4,7 @@
 name: Node.js CI
 
 on:
-    
-  pull_request:
+  push:
     branches: [ main ]
 
 jobs:
@@ -16,7 +15,6 @@ jobs:
     strategy:
       matrix:
         node-version: [12.x, 14.x, 16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
     - uses: actions/checkout@v2
@@ -25,6 +23,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-    - run: npm run scss
-#     - run: npm test
+    - run: npm CI
+    - run: npm run deploy
