@@ -28,4 +28,5 @@
   background-color: adjust-color(map-get($theme, standard, body, bg ), $lightness: +10%);
   color: map-get($theme, standard, body, clr);
   flex-grow: 1;
+  width: 90%;
 }

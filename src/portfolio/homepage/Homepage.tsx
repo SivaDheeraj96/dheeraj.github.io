@@ -1,5 +1,6 @@
 import React from 'react';
 import { Home } from '../Home/Home';
+import { Skills } from '../skills/Skills';
 import { LeftRail } from './LeftRail';
 import styles from './styles/homepage.module.scss';
 
@@ -20,7 +21,7 @@ export const Homepage: React.FC = () => {
           (<Home/>)
         }
         {section === 'skills' &&
-          (<div className='skills-container'>This is My Skills Page; still under construction </div>)
+          (<Skills/>)
         }
         {section === 'experience' &&
           (<div className='experience-container'>This is My Experience Page; still under construction</div>)
