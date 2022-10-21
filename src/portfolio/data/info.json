@@ -14,5 +14,11 @@
      "text":"@SivaDheerajReddyObulam",
      "icon":"linkedin"
     }
+  ],
+  "skills":[
+    {"name": "Programming", "value":["TypeScript", "React", "Node.js", "Java"]},
+    {"name": "Scripting", "value":["HTML", "SCSS", "Bash"]},
+    {"name": "Frameworks and tools", "value":["Amazon Web Services (AWS)", "Google Cloud Platform (GCP)", "Redis", "Apache Ant", "Tomcat", "Git", "CI/CD", "Mercurial", "Selenium", "HDFS", "CDN", "Kafka"]},
+    {"name": "Softwares", "value": ["Tableau", "Power BI", "Zoho Analytics", "Zoho Projects", "Sigma Computing"]}
   ]
 }
