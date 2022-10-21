@@ -1,7 +1,5 @@
+@import './../../styles/theme.module.scss';
 
-.root{
-  font-family: "Fuzzy Bubbles rev=2";
-}
 .main-container {
   width: 100vw;
   height: 100vh;
@@ -11,11 +9,12 @@
 }
 
 .header-container{
-  background-color: black;
+  background-color: map-get($theme, standard, top-rail, bg );
+  color: map-get($theme, standard, top-rail, clr );
   height: 10vh;
   flex-grow: 1;
+
   .title{
-    color: white;
     vertical-align: middle;
     display: inline-block;
     text-align: center;
@@ -26,6 +25,7 @@
   }
 }
 .body-content{
-  background-color: #FFF;
+  background-color: adjust-color(map-get($theme, standard, body, bg ), $lightness: +10%);
+  color: map-get($theme, standard, body, clr);
   flex-grow: 1;
 }

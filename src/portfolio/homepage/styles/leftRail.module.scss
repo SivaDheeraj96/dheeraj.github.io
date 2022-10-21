@@ -1,7 +1,9 @@
 @import './../../styles/general.module.scss';
+@import './../../styles/theme.module.scss';
 
 .left-rail-container{
-  @include background-color(black);
+  background-color: map-get($theme, standard, left-rail, bg);
+  color: map-get($theme, standard, left-rail, clr);
   height: 100vh;
   width: 10%;
   font-size: 18px;
@@ -17,7 +19,7 @@
 
 
     .menu-option{
-      @include clickable(black);
+      @include clickable(map-get($theme, standard, left-rail, bg), map-get($theme, standard, left-rail, clr) );
       text-decoration: none;
       padding: 10% 5% 10% 10%;
       overflow: hidden;
