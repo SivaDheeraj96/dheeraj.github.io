@@ -1,0 +1,33 @@
+@import './../styles/general.module.scss';
+.home-container{
+  font-size: 18px;
+  .name-holder{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+  .social-media-container{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    flex-wrap: wrap;
+
+    .link-container{
+      @include card;
+      @include clickable(white);
+      margin: 1%;
+      padding: 1%;
+      text-decoration: none;
+      color: black;
+      text-align: center;
+      width: 20%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      .name{
+        display: block;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+}

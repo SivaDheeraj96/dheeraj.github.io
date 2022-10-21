@@ -1,13 +1,14 @@
+@import './../../styles/general.module.scss';
+
 .left-rail-container{
+  @include background-color(black);
   height: 100vh;
   width: 10%;
-  border-right: 1px solid white;
+  font-size: 18px;
   
   .left-menu-item{
     height: 10%;
     width: 100%;
-    background-color: white;
-    color: red;
   }
   .menu-container{
     text-decoration: none;
@@ -16,20 +17,12 @@
 
 
     .menu-option{
+      @include clickable(black);
       text-decoration: none;
-      color: white;
       padding: 10% 5% 10% 10%;
       overflow: hidden;
       text-overflow: ellipsis;
       cursor: pointer;
-      
-      &:hover{
-        background-color: rgb(56, 56, 56);
-      }
-
-      &:active{
-        background-color: rgb(115, 115, 115);
-      }
     }
   }
 }
