@@ -14,6 +14,7 @@ export const LeftRail = (props: props) => {
           <span className={styles['menu-option']} onClick={() => props.setSection('home')}>Home</span>
           <span className={styles['menu-option']} onClick={() => props.setSection('skills')}>Skills</span>
           <span className={styles['menu-option']} onClick={() => props.setSection('experience')}>Experience</span>
+          <span className={styles['menu-option']} onClick={() => props.setSection('education')}>Education</span>
           <span className={styles['menu-option']} onClick={() => props.setSection('contact')}>Contact</span>
         </nav>
       </div>

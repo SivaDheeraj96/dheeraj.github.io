@@ -1,6 +1,6 @@
 
 .root{
-  font-size: 1em;
+  font-family: "Fuzzy Bubbles rev=2";
 }
 .main-container {
   width: 100vw;
@@ -18,8 +18,11 @@
     color: white;
     vertical-align: middle;
     display: inline-block;
-    margin-top: 4vh;
-    margin-left: 4vw;
+    text-align: center;
+    width: 100%;
+    margin-top: 2%;
+    font-weight: bold;
+    font-size: 32px;
   }
 }
 .body-content{
